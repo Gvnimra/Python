@@ -41,7 +41,14 @@ elif conta_universitaria:
         print("Saque realizado com sucesso!")
     else:
         print("Saldo insuficiente!")
+else:
+    print("Sistema não reconheceu o seu to´p de conta, entre em contato com o seu Gerente!")
 
+#If Ternario 
+
+status = "Sucesso" if saldo >= saque else "Falha"
+
+print(f"{status} ao realizar o saque!")
 
 
 
