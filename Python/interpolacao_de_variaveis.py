@@ -9,6 +9,8 @@ idade = 31
 profissao = "Programador"
 linguagem = "Python"
 
+pessoa = {"nome": "Giovani de Moura André", "idade": 28, "profissao": "programador", "linguagem": "Python"}
+
 print("Olá, me chamo %s. Eu tenho %d anos de idade, trabalho como %s e estou estudando %s." %(nome, idade, profissao, linguagem))
 print()
 print("MÉTODO FORMAT")
