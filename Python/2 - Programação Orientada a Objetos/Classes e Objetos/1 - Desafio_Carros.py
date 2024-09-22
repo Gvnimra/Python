@@ -10,7 +10,7 @@ class Carro:
 
     def parar(self):
         print("Parando carro...")
-        print("CArro Parado!")
+        print("Carro Parado!")
 
     def correr(self):
         print("Vruuumm...")
