@@ -1,10 +1,18 @@
 #Espaço para estudos 
 
-contador = 0
 
-while contador >= 10:
-    print("Contador: ", contador)
-    if contador == 10:
-        break
-    contador +=1
+def decorador(funcao):
+    def wrapper():
+        print("Função está prestes a ser executada.")
+        funcao()
+        print("Função foi executada.")
+    return wrapper
+
+@decorador
+def saudacao():
+    print("Olá, mundo!")
+
+saudacao()
+
+
 
