@@ -11,10 +11,16 @@ class Ave(Animal):
         self.cor_bico = cor_bico
         super().__init__(**kw)
 
+    def __str__(self):
+        return 'ave 42'
+    
 class Mamifero(Animal):
     def __init__(self, cor_pelo, **kw):
         self.cor_pelo = cor_pelo
         super().__init__(**kw)
+
+    def __str__(self)
+        return  'Mamifero'
 
 class Cachorro(Mamifero):
     pass
@@ -23,10 +29,17 @@ class Gato(Mamifero):
     pass
 
 class Ornitorrinco(Mamifero, Ave):
-    pass
+    def __init__(self, cor_bico, cor_pelo, nro_patas):
+        print(Ornitorrinco.__mro__)
 
-gato = Gato(4, 'Preto')
+        super().__init__(cor_bico = cor_bico, cor_pelo = cor_pelo, 
+        nro_patas = nro_patas)
+
+    def __str__(self):
+        return 'Ornitorrinco'
+
+gato = Gato( nro_patas = 4, cor_pelo= "Preto")
 print(gato)
 
-ornitorrinco = Ornitorrinco(2, "Vermelho")
+ornitorrinco = Ornitorrinco(nro_patas = 2, cor_pelo= "Vermelho", cor_bico = "Laranja")
 print(ornitorrinco)
