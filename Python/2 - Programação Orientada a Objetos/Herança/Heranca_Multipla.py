@@ -19,7 +19,7 @@ class Mamifero(Animal):
         self.cor_pelo = cor_pelo
         super().__init__(**kw)
 
-    def __str__(self)
+    def __str__(self):
         return  'Mamifero'
 
 class Cachorro(Mamifero):
