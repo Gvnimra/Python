@@ -16,7 +16,7 @@ class Foo:
     def x(self):
         self._x = -1
 
-foo = Foo(100)
+foo = Foo(10)
 print(foo.x)
 foo.x = 10
 print(foo.x)
